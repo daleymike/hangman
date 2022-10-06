@@ -10,10 +10,19 @@
 <body>
     <div class="container">
         <h2 class="text-center">Hangman</h2>
+        <br>
+        <div>
+            <p class="text-center">*HANGMAN PIC HERE*</p>
+        </div>
+        <br>
         <div class="d-flex justify-content-center">
             {% for x in hangman_words %}
                 <p class="text-danger m-2">_</p>
             {% endfor %}
+        </div>
+        <br>
+        <div>
+            <p class="text-center">*GUESSED LETTERS HERE*</p>
         </div>
 
     </div>
