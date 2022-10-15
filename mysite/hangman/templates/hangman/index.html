@@ -16,12 +16,20 @@
         </div>
         <br>
         <div class="d-flex justify-content-center">
-            {% for x in hangman_words %}
+            {% for i in random_word_array %}
                 <p class="text-danger m-2">_</p>
             {% endfor %}
         </div>
         <br>
+        <div class="d-flex justify-content-center">
+            <form>
+                <label for="letter_guess">Guess a Letter</label>
+                <input type="text" name="letter_guess" id="letter_guess">
+            </form>
+        </div>
+        <br>
         <div>
+            <p>{{random_word_array}}</p>
             <p class="text-center">*GUESSED LETTERS HERE*</p>
         </div>
 
